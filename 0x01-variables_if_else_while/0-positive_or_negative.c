@@ -4,10 +4,14 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/* Determine if a random integer is positive or negative */
+/**
+ * main - Check if a randomly generated number is positive or negative.
+ * Then, print the outcome.
+ *
+ * Return: 0 since that is the dafault return value for the main function
+ */
 int main(void)
 {
-	/* Determine if a random integer is positive or negative */
 	int n;
 
 	srand(time(0));
