@@ -1,17 +1,20 @@
-#include "main.h"
+#include "assets.c"
 /**
- * _puts - Prints a string followed by a new line
- * @str: String to be printed
+ * _puts - Prints string to standard output
+ * @str: Steing to be printed
  *
  * Return: void
  */
-
 void _puts(char *str)
 {
-	while (*str)
+	int i = 0;
+
+	while (*(str + i) != '\0')
 	{
-		_putchar(*str);
-		++str;
+		_putchar(*(str + i));
+		i++;
 	}
+
 	_putchar('\n');
 }
+
